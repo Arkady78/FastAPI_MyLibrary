@@ -45,3 +45,4 @@ class BooksRepository:
         if result.first():
             await session.execute(delete(BookModel).where(BookModel.id == book_id))
             await session.commit()
+            return True

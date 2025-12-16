@@ -1,5 +1,6 @@
 from pydantic import BaseModel, ConfigDict, Field
 
+
 class SBookAdd(BaseModel):
     title: str
     author: str
